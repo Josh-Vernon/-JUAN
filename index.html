@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <script defer src="materialize.min.js"></script>
+    <link rel="stylesheet" href="materialize.min.css"> 
+    <link rel="stylesheet", type="text/css" href="style.css">
+    <Title>#Juan</Title>  
+</head>
+<body >
+
+    <nav class="nav-wrapper">
+      <div class="container">
+        
+        <div class="row">
+          <div class="col  l7 m8 s10 ">
+            <a href="javascript:void(0)" class="brand-logo ">#Juan</a>  
+          </div>
+          
+          <a href="#" class="Menu sidenav-trigger right hide-on-large-only" data-target="mobile-links">
+              <i class="material-icons">menu</i>
+          </a>
+
+          <div class="drop col l2  center nav-butns hide-on-med-and-down "> 
+            <a onClick="false;" class="btn  nav-btns dp">Topic</a>
+            <div class="down">
+              <button class="Contents" onclick="Home()">Home</button>
+              <button class="Contents" onclick="His()">History</button>
+              <button class="Contents" onclick="Spot()">Tourist Spots</button>
+              <button class="Contents" onclick="Food()">Foods</button>
+              <button class="Contents" onclick="Fes()">Festivals</button>
+            </div>
+          </div>
+
+          <div class=" col l2  nav-butns hide-on-med-and-down">
+            <a href="#Footer" class="btn center nav-btns">About</a>
+          </div>
+
+          <div class=" col l1  center  nav-butns hide-on-med-and-down">
+            <a onclick="OpenPop()" class="btn  nav-btns ">Source</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <ul class="collapsible sidenav" id="mobile-links">
+      <li>
+          <a class="scrll collapsible-header">Topic<span class="new badge">5</span></a>
+
+        <div class="collapsible-body collection">
+          <span>
+            <a class="scrlls valign-wrapper collection-item" onclick="Home()"  >Home
+              <i class="material-icons secondary-content">home</i></a>
+          </span>
+          <span>
+            <a href="#History" class="scrlls valign-wrapper collection-item">History
+              <i class="material-icons secondary-content">menu_book</i></a>
+          </span>
+          <span>
+            <a href="#Places" class="scrlls valign-wrapper collection-item">TouristSpot
+              <i class="material-icons secondary-content">map</i>
+            </a>  
+          </span>
+          <span>
+            <a href="#Foods" class="scrlls valign-wrapper collection-item">Foods
+              <i class="material-icons secondary-content">fastfood</i></a></span>
+          <span>
+            <a class="scrlls valign-wrapper collection-item" href="#Festival">Festivals
+              <i class="material-icons secondary-content">diversity_3</i></a>
+          </span>
+        </div>
+      </li>
+      <li ><a class="scrll collapsible-header" href="#Footer">About</a></li>
+      <li ><a class="scrll collapsible-header" onclick="OpenPop()">Source</a></li>
+    </ul>
+
+
+    <div class="Popup" id="PopUp">
+      <div class="hd">
+        <a onclick="ClosePop()">
+          <ion-icon name="close" class="close"></ion-icon> 
+          <h1>Links</h1>
+        </a>
+      </div>
+      <div class="bdy container">
+        <p>
+    
+              <a href="https://www.britannica.com/place/Philippines/Sports-and-recreation#ref214501" target="_blank">History</a>
+              <br><br>
+
+              <a href="https://en.wikipedia.org/wiki/Philippine_adobo" target="_blank">Adobo</a>,
+              <a href="https://en.wikipedia.org/wiki/Sisig" target="_blank">Sisig</a>,
+              <a href="https://panlasangpinoy.com/kare-kare-recipe/" target="_blank">Kare-Kare</a>,
+              <a href="https://www.discoverthephilippines.com/10-popular-native-filipino-delicacies/" target="_blank">Bibingka</a>,
+              <a href="https://www.hungryhuy.com/puto-filipino-steamed-rice-cakes/" target="_blank">Puto</a>
+              <br><br>
+          
+              <a href="https://guidetothephilippines.ph/articles/what-to-experience/top-tourist-spots-philippines" target="_blank">Mayon Volcano, Banaue Rice Terraces, Fort Santiago, Boracay</a>,
+              <a href="https://www.planetware.com/philippines/top-rated-tourist-attractions-things-to-do-in-the-philippines-phi-1-26.htm" target="_blank">Chocolate Hills</a>,
+              <a href="https://www.zenrooms.com/blog/philippines-tourist-spots/#Kayangan-Lake" target="_blank">Vigan City</a>
+              <br><br>
+
+              <a href="https://www.zenrooms.com/blog/festivals-in-the-philippines/#Masskara-Festival-Bacolod" target="_blank">Sinulog Festival, MassKara Festival, Higantes Festival</a>,
+              <a href="https://hicaps.com.ph/pahiyas-festival/#:~:text=The%20Pahiyas%20Festival%20is%20a,Traditionally%2C%20the%20event%20was%20modest." target="_blank">Pahiyas Festival</a>
+        </p>
+      </div>
+    </div>
+
+
+    <header id="home">
+      <video class="responsive-video" src="Design/Live.mp4" autoplay loop muted>
+      </video>  
+      <div class="img"></div>
+    </header>
+          
+    
+
+    <section class="scrollspy">
+      <div class="Pages one" id="History"> 
+          <div class="Image img1 ">
+          </div>
+      </div>
+      <div class="Pages cont1">
+        <div class="Annimation title-box1">
+          <h1 class="Title title-1">History</h1>
+        </div>
+        <div class="Carousell">
+          
+          <div class="slides">
+            <input type="radio" name="r" id="c1-r1" checked>
+            <input type="radio" name="r" id="c1-r2">
+            <input type="radio" name="r" id="c1-r3">
+
+
+            <div class="slide c1-s1">
+                <div class="bg1"></div>
+                <img src="Design/Content-pic/C1/Philippine_map.jpg" alt="Ph_map">
+                <div class="paragraph">
+                  <p class="P-content"> Philippines, island country of Southeast Asia in the western Pacific Ocean. It is an archipelago consisting of more than 7,000 islands and islets lying about 500 miles (800 km) off the coast of Vietnam. The Philippines takes its name from Philip II, who was king of Spain during the Spanish colonization of the islands in the 16th century. Because it was under Spanish rule for 333 years and under U.S. tutelage for a further 48 years, the Philippines has many cultural affinities with the West.</p>
+                </div>
+
+            </div>
+            <div class="slide c1-s2">
+              <div class="bg1"></div>
+              <img src="Design/Content-pic/C1/Magellan.jpg" alt="Magellan">
+              <div class="paragraph">
+                <p class="P-content">The Portuguese navigator and explorer Ferdinand Magellan headed the first Spanish foray to the Philippines when he made landfall on Cebu in March 1521; a short time later he met an untimely death on the nearby island of Mactan. After King Philip II had dispatched three further expeditions that ended in disaster, he sent out Miguel López de Legazpi, who established the first permanent Spanish settlement, in Cebu, in 1565. The Spanish city of Manila was founded in 1571, and by the end of the 16th century most of the coastal and lowland areas from Luzon to northern Mindanao were under Spanish control. Friars marched with soldiers and soon accomplished the nominal conversion to Roman Catholicism of all the local people under Spanish administration.</p>
+              </div>
+            </div>
+            <div class="slide c1-s3">
+              <div class="bg1"></div>
+              <img src="Design/Content-pic/C1/WWII.jpg" alt="">
+              <div class="paragraph">
+                <p class="P-content">The Japanese attack of the Philippines on December 8, 1941 came at a time when the U.S. military buildup had hardly begun. Their advance was rapid; before Christmas, Manila was declared an “open city,” while Quezon and Osmeña were evacuated to MacArthur`s headquarters on Corregidor Island. Despite a desire, at one point, to return to Manila in order to surrender, Quezon was persuaded to leave the Philippines in March 1942 on a U.S. submarine; he was never to return. Osmeña also went. Filipino and American forces, under Gen. Jonathan M. Wainwright, surrendered in May. An Executive Commission made up of more than 30 members of the old Filipino political elite had been cooperating with Japanese military authorities in Manila since January.</p>
+              </div>
+            </div>
+
+            <div class="c-nav">
+              <label for="c1-r1" class = "bar-1"></label>
+              <label for="c1-r2" class = "bar-1"></label>
+              <label for="c1-r3" class = "bar-1"></label>
+            </div>
+          </div>
+            
+        </div>
+      </div>   
+      
+      <div class="Pages two" id="Places">
+        <div class="Image img2"></div>
+      </div>
+      <section class="Pages cont2 container ">
+        
+        <div class="row">
+          <div class="Annimation title-box2">
+          <h1 class="Title title-2">TouristSpot</h1>
+        </div>
+
+          <div class="col l6 m6 s12">
+            <div class="card c1">
+              <div class="card-image  waves-effect waves-block waves-light">
+                <img class="activator" src="Design/Content-pic/C2/Mayon.jpg">
+              </div> 
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Mayon Volcano<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Mayon Volcano<i class="material-icons right">close</i></span>
+                <p>Mayon Volcano is one of the most beautiful places to visit in the Philippines and is a top attraction in any Bicol tour. </p>
+                <p>The name Mayon comes from the Bicolano word magayon,which means beautiful.
+                </p>
+                <p>
+                  One of the top natural landmarks in the Philippines and one of the most-visited tourist spots in Albay, it is already a wonderful experience seeing the volcano from afar. But if you are an adrenaline junkie, you can soak up all its beauty while gliding through a zipline in Lignon Hill or going on a Mayon Volcano tour via a Mayon ATV ride in Bicol.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col l6 m6 s12">
+            <div class="card c2 ">
+              <div class="card-image  waves-effect waves-block waves-light">
+                <img class="activator" src="Design/Content-pic/C2/Banaue.jpg">
+              </div> 
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Banaue<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Banaue Rice Terraces<i class="material-icons right">close</i></span>
+                <p>
+                  Hand-chiseled some 2000 years ago, the Banaue Rice Terraces in Banaue of Ifugao, North Luzon, is a remarkable destination and is truly one of the most beautiful places in the Philippines and regarded as one of the Philippines' iconic landmarks.
+                </p>
+                <p>
+                  Sit in a colorful jeepney as it cruises along winding roads in Banaue, and views of dramatic mud-walled rice terraces leave you in awe.
+                </p>
+                <p>
+                  Banaue and its many natural attractions may pack a lot of tourists so you can make your way further to quieter Batad Rice Terraces and take a quick dip at its mighty Tappiya waterfalls. You can also explore nearby Baguio City or pick fresh strawberries in La Trinidad, Benguet. Check out Baguio hotels that you can book for your trip.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col l6 m6 s12">
+            <div class="card c3 ">
+              <div class="card-image  waves-effect waves-block waves-light">
+                <img class="activator" src="Design/Content-pic/C2/Fort-Santiago.jpg">
+              </div> 
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Fort Santiago<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Fort Santiago<i class="material-icons right">close</i></span>
+                <p>
+                  The walled city of Intramuros in Manila, one of the top landmarks in the Philippines. This 64-hectare Spanish fortress was erected by Miguel Lopez de Legazpi and was destroyed by the end of World War II.
+                </p>
+                <p>
+                  The ruins remain very alive today and are some of the top Instagrammable places in Manila. The area can be explored via Intramuros tours or a Manila bike tour. The area has become home to several universities and establishments.
+                </p>
+                <p>
+                  Another Intramuros attraction is Fort Santiago, a citadel that served as headquarters for armies and foreign powers. It is a historically significant site where the national hero, Dr. Jose Rizal, was imprisoned before his execution.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col l6 m6 s12 ">
+            <div class="card c4 ">
+              <div class="card-image  waves-effect waves-block waves-light">
+                <img class="activator" src="Design/Content-pic/C2/Boracay.jpg">
+              </div> 
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Boracay Beach<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Boracay Beach<i class="material-icons right">close</i></span>
+                <p>
+                  Long hailed as one of the best white sand beaches in the Philippines and the entire world, Boracay`s claim to fame is its 4-kilometer stretch of pure white, powdery sand called White Beach
+                </p>
+                <p>
+                  Those who want to indulge during their holiday can also do so as Boracay is home to some of the best 5-star hotels in the Philippines, as well as several honeymoon resorts and some of the best beach resorts in the Philippines. You can also have a workcation here.
+              </div>
+            </div>
+          </div>
+
+          <div class="col l6 m6 s12 ">
+            <div class="card c5 ">
+              <div class="card-image  waves-effect waves-block waves-light">
+                <img class="activator" src="Design/Content-pic/C2/Chocolate-Hills.jpg">
+              </div> 
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Chocolate Hills<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Chocolate Hills<i class="material-icons right">close</i></span>
+                <p>The geological wonder on the island of Bohol known as the Chocolate    Hills is a unique natural phenomenon that features more than 1,200 small mountains that emerged above the ground over several centuries.
+                </p>
+                <p>The area was once under the ocean, and these unique hills expand in every direction. They are green during much of the year, but during the dry season, they turn to a chocolate-brown color, thus the name, chocolate hills.
+                </p>
+                <p>A convenient path leads to the top of a lookout area, which provides the best view. Be sure to observe the many delicate flowers along the walkway that are unique to this area.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col l6 m6 s12 ">
+            <div class="card c6 ">
+              <div class="card-image  waves-effect waves-block waves-light">
+                <img class="activator" src="Design/Content-pic/C2/Vigan.jpg">
+              </div> 
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Vigan City<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Vigan City<i class="material-icons right">close</i></span>
+                <p>Visiting Vigan is like traveling back in time because of its preserved Spanish Colonial town that even the world considers as one of the best. Aside from the magnificent Vigan tourist spots, what makes this tourist destination in the Philippines well-loved is its historical and cultural significance that feeds not just wanderlust but also a traveler’s mind and soul. </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <div class="Pages three" id="Foods">
+        <div class="Image img3"></div>
+      </div>
+      <section class="Pages  cont3 container">
+
+        <div class="Annimation title-box3">
+            <h1 class="Title title-3">
+              Cuisine
+            </h1>
+          </div>
+
+        <div class="carousel">
+          
+
+          <a class="carousel-item" href="#one!"><img class="responsive-img" src="Design/Content-pic/C3/Adobo.jpg">
+          <div>
+            <h3>Adobo - <span>Main Course</span></h3>
+            <p class="flow-text">
+              Philippine adobo is a popular Filipino dish in Philippine cuisine that involves meat, seafood, or vegetables marinated in vinegar, soy sauce, garlic, bay leaves, and black peppercorns, which is browned in oil, and simmered in the marinade.
+            </p>
+            
+            <p class="flow-text">
+              Based on the main ingredients, the most common adobo types are adobong manók, in which chicken is used, and adobong baboy, in which pork is used. Adobong baka, along with adobong manók, is more popular among Muslim Filipinos in accordance with halal dietary laws. It has occasionally been considered the unofficial national dish in the Philippines.
+            </p>
+          </div>
+          </a>
+
+          <a class="carousel-item" href="#two!"><img class="responsive-img" src="Design/Content-pic/C3/Bibingka.jpg">
+            <div >
+              <h3>Biko - <span>Dessert</span></h3>
+              <p class="flow-text">
+                Biko is a sweet and chewy rice cake made from glutinous rice, brown sugar, and coconut milk.  It is one of the easiest delicacies to cook as the glutinous rice is cooked the same way rice is cooked.
+              </p>
+              
+              <p class="flow-text">
+                It is then added into the brown sugar and coconut milk mixture being cooked in low heat.  Although not necessary, biko is commonly topped with latik and traditionally served as patties served atop or wrapped in banana leaves.
+              </p>
+            </div>
+          </a>
+
+          <a class="carousel-item" href="#four!"><img class="responsive-img" src="Design/Content-pic/C3/Kare-kare.jpg">
+              <div >
+                <h3>Kare-Kare -  <span>Curry</span></h3>
+                <p class="flow-text">
+                  Kare-Kare is a type of Filipino stew with a rich and thick peanut sauce. It is a popular dish in the Philippines served during special occasions. The traditional recipe is composed of ox tail. There are instances wherein both ox tripe and tail are used.
+                </p>
+                
+                <p class="flow-text">
+                  The vegetable components of the dish are string beans, eggplant, bok choy, and banana blossoms. Lightly browned toasted ground rice is used to thicken the sauce.
+                </p>
+              </div>
+          </a>
+
+          <a class="carousel-item" href="#five!"><img class="responsive-img" src="Design/Content-pic/C3/Sisig.jpg">
+          <div>
+            <h3>Sisig - <span>Appetizer</span></h3>
+            <p class="flow-text">
+              Sisig is a Filipino dish made from parts of a pig's face and belly, and chicken liver which is usually seasoned with calamansi, onions, and chili peppers. It originates from the Pampanga region in Luzon.
+            </p>
+            
+            <p class="flow-text">
+              The term also came to be used to a method of preparing fish and meat, especially pork, which is marinated in a sour liquid such as lemon juice or vinegar, then seasoned with salt, pepper and other spices.
+            </p>
+          </div>
+          </a>
+
+          <a class="carousel-item" href="#one!"><img class="responsive-img" src="Design/Content-pic/C3/Puto.jpg">
+            <div>
+              <h3>Puto - <span>Dessert</span></h3>
+              <p class="flow-text">
+                This puto recipe will give you airy, light and slightly sweet steamed rice cakes which are a Filipino classic. As a kid, there was always puto served on the dessert table at our family parties (or boodle fights) and they were always the perfect bite-sized pieces to sneak before dinner would start. 
+              </p>
+              
+              <p class="flow-text">
+                The word puto comes from the Malay word “puttu,” which means “portioned.” This makes sense considering most of the time, puto is made in mini muffin or cupcake molds that are around one to one and half inches-the perfect portion if you ask me. 
+              </p>
+            </div>
+            </a>
+        </div>
+      </section>
+    </section>
+
+    <section class="no-stick" id="Festival">
+      <div class="section" style="height: 40px;"></div>
+      <div class="parallax-container">
+        <div class="parallax"><img  src="Design/fest.gif"></div>
+      </div>
+
+      <div class="section F-text">
+
+        <div class="row container">
+          <div class=" col s12">
+            <h1>Philippine Festivals</h1>
+            <p>
+              A festival or commonly known as a “Fiesta” is part of the Filipino culture. Each city or province has a local fiesta. Being a very religious centered country, a fiesta is commonly about the celebration of a city or province's patron saint or of harvest. There is a fiesta going on at any time in the Philippines. A fiesta is a special time with a banquet for kin and friends. They are always colorful and unique.
+            </p>
+          </div>
+        </div>
+
+        <div class="row container hide-on-med-and-down">
+          <div class="col l6">
+            <h3>Sinulog Fesival</h3>
+            <p>
+              The word “sinulog” means “like the water current”, and is actually the name of the step that the dancers perform.
+            </p>
+            <p>
+              Head down south to the Queen City and experience this fiesta in the Philippines that celebrates Cebu`s patron saint  Santo Niño. Sinulog is one of the 10 examples of religious festivals in the Philippines. This is a week-long event that is done with processions, parties, concerts, colorful and lively street dancing, irresistible drum beats, and parades.
+            </p>
+          </div>
+          <div class="col l6 ">
+            <img class="responsive-img materialboxed"  src="Design/Content-pic/C4/Sinulog.jpg" alt="Sinulog">
+          </div>
+        </div>
+
+        <div class="row container hide-on-large-only show-on-med-and-down">
+          <div class="col l6 ">
+            <img class="responsive-img materialboxed" src="Design/Content-pic/C4/Sinulog.jpg" alt="Sinulog">
+          </div>
+          <div class="col l6">
+            <h3>Sinulog Fesival</h3>
+            <p>
+              The word “sinulog” means “like the water current”, and is actually the name of the step that the dancers perform.
+            </p>
+            <p>
+              Head down south to the Queen City and experience this fiesta in the Philippines that celebrates Cebu`s patron saint  Santo Niño. Sinulog is one of the 10 examples of religious festivals in the Philippines. This is a week-long event that is done with processions, parties, concerts, colorful and lively street dancing, irresistible drum beats, and parades.
+            </p>
+          </div>
+          
+        </div>
+
+        <div class=" row container ">
+          <div class="col l6 ">
+            <img class="responsive-img materialboxed" src="Design/Content-pic/C4/Higantes.jpg" alt="Higantes">
+          </div>
+          <div class="col l6">
+            <h3>Higantes Fesival</h3>
+            <p>
+              Angono, Rizal is known as the “Art Capital of the Philippines.” Aside from this, the town is also famous for its Higantes Festival.
+            </p>
+            <p>
+              Based on the Angono folklore, the “Higantes” or paper-mache giants were done by locals as a form of protest during the Spanish colonization. Now, these paper-mache giants now play the part of one of the most unique festivals in the Philippines. Higantes Festival is celebrated every 4th week of November in Angono, Rizal to honor San Clemente, the town`s patron saint.
+            </p>
+          </div>
+        </div>
+
+        <div class="row container hide-on-med-and-down">
+          <div class="col l6">
+              <h3>Pahiyas Festival</h3>
+              <p>The Pahiyas Festival is a festival of thankfulness after a bountiful harvest. 'Pahiyas' literally means “precious offering,” and the practice dates back to the 16th century. People celebrate it in honor of San Isidro Labrador, the farmers patron saint. Traditionally, the event was modest.
+              </p>
+              <p>
+                The Pahiyas Festival is still celebrated today. People think it keeps misfortune and deprivation away from Lucban. 
+              </p>
+          </div>
+          <div class="col l6">
+            <img class="responsive-img  materialboxed" src="Design/Content-pic/C4/Pahiyas.jpg" alt="Pahiyas">
+          </div>
+        </div>
+
+        <div class="row container hide-on-large-only show-on-med-and-down">
+          <div class="col l6">
+            <img class="responsive-img  materialboxed" src="Design/Content-pic/C4/Pahiyas.jpg" alt="Pahiyas">
+          </div>
+
+          <div class="col l6">
+              <h3>Pahiyas Festival</h3>
+              <p>The Pahiyas Festival is a festival of thankfulness after a bountiful harvest. 'Pahiyas' literally means “precious offering,” and the practice dates back to the 16th century. People celebrate it in honor of San Isidro Labrador, the farmers patron saint. Traditionally, the event was modest.
+              </p>
+              <p>
+                The Pahiyas Festival is still celebrated today. People think it keeps misfortune and deprivation away from Lucban. 
+              </p>
+          </div> 
+        </div>
+
+        <div class=" row container ">
+          <div class="col l6 ">
+            <img class="responsive-img  materialboxed" src="Design/Content-pic/C4/MassKara.jpg" alt="MassKara">
+          </div>
+          <div class="col l6">
+            <h3>Masskara Festival</h3>
+            <p>
+              MassKara Festival is a very popular festival in the Philippines. MassKara is derived from the words “mass” meaning “many” and “kara” meaning “faces,” thus, calling it the Festival of Many Faces. Many tourists visit Bacolod in October to witness this grand Filipino cultural festival. Being known as the City of Smiles, Bacolod parades many smiling masks worn by the locals during this festival in the Philippines.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+    <footer id="Footer">
+      <div class="row container">
+        <div class="quote col l6 valign-wrapper">
+          <h4>
+            Man cannot discover new oceans unless he has the courage to lose sight of the shore.
+          </h4>
+        </div>
+        <div class="col l6 ">
+          <ul class="tabs">
+            <li class="tab col l6">
+              <a href="#contact" class="">Feedback</a>
+              
+            </li>
+            <li class="tab col l6">
+              <a href="#socials" class="">Contact Us</a>
+            </li>
+          </ul>
+          <div class="col s12" id="contact">
+            <div class="input input-field col s12">
+              <input id="first_name" type="text" class="validate">
+              <label class="active" for="first_name2">First Name</label>
+            </div>
+            <div class="input-field col s12">
+              <input id="last_name" type="text" class="validate">
+              <label class="active" for="last_name">Last Name</label>
+            </div>
+
+            <div class="input-field col s12">
+              <input id="msg" type="text" class="validate">
+              <label class="active" for="msg">Message</label>
+            </div>
+            <a class="F-but waves-effect waves-light btn "><i class="material-icons right">send</i>Submit</a>
+            
+          </div>
+          <div class="social col s12" id="socials">
+           
+              <a href="https://www.facebook.com/josh.vernon.16940" target="_blank" class="col s6 valign-wrapper">
+                <ion-icon class="ico" name="logo-facebook"></ion-icon><span> Facebook</span>
+              </a>
+          
+              <a href="https://www.instagram.com/jsh_vernon/" target="_blank" class="col s6 valign-wrapper">
+                <ion-icon class="ico" name="logo-instagram"></ion-icon><span> Instagram</span</i>
+              </a>
+            
+              <a onclick="return false" class="col s6 valign-wrapper tooltipped" data-tooltip="Jvern2603@gmail.com" data-position="top">
+                <ion-icon class="ico" name="mail-outline"></ion-icon><span> Email</span>
+              </a>
+            
+              <a onclick="return false" class="col s6 valign-wrapper tooltipped" data-tooltip="09124627924" data-position="top">
+                <ion-icon class="ico" name="call-outline"></ion-icon><span> 09XX-XXXX-XXX</span>
+              </a>
+
+          </div>
+          
+            
+        </div>
+      </div>
+    </footer>
+    </section>
+  
+   
+
+    
+
+
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/83a072c9f0.js" crossorigin="anonymous"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+
+        const observer =  new IntersectionObserver((entries) =>{
+          entries.forEach((entry) =>{
+              console.log(entry)
+              if(entry.isIntersecting)
+              {
+                entry.target.classList.add('show');
+              }
+              else{
+                entry.target.classList.remove('show');
+              }
+          });
+        });
+
+        const hiddenElements = document.querySelectorAll('.Annimation');
+        hiddenElements.forEach((el) => observer.observe(el));
+
+
+
+
+
+
+
+
+
+
+
+      let Popup = document.getElementById("PopUp");
+
+      function OpenPop(){
+        Popup.classList.add("Popup-open");
+      }
+      function ClosePop(){
+        Popup.classList.remove("Popup-open");
+      }
+      
+      function Home() {
+        window.scrollTo(0, 0);
+        }
+      function His() {
+          window.scrollTo(0, 700);
+        }
+      function Spot() {
+          window.scrollTo(0, 2350);
+      }
+      function Food() {
+          window.scrollTo(0, 4800);
+      }
+      function Fes() {
+          window.scrollTo(0, 6650);
+      }
+      function Foot() {
+        window.scrollTo(0,6900);
+  }
+
+    </script>
+    
+    <script>
+      $(document).ready(function(){
+        $('.collapsible').collapsible();
+        $('.sidenav').sidenav();  
+        $('.scrollspy').scrollSpy();
+        $('.carousel').carousel();
+        $('.parallax').parallax();
+        $('.materialboxed').materialbox();
+        $('.tabs').tabs();
+        $('.tooltipped').tooltip();
+        M.updateTextFields();
+      })
+
+    </script>
+</body>
+</html>
